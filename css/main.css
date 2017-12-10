@@ -1,0 +1,39 @@
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+/* general style*/ 
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    color:lightseagreen;
+    /* margin-bottom: 10px; */
+    margin-top: 2%;
+}
+.container {
+    margin: 0 auto;
+    /* max-width: 1250px; */
+    max-width: 100%;
+}
+
+
+.back-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;    
+    /* background-position: center; */
+}
+.cat img {
+    display:block;
+    margin:auto;  
+    padding-top: 30%;
+    margin-top: 5%;
+
+}
+.tres, .dos, .uno{
+    display: none;
+}
