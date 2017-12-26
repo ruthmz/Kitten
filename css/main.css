@@ -1,85 +1,61 @@
-/* Reset */
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-/* general style*/ 
-h1{
-    font-family: sans-serif;
-    text-align: center;
-    color:lightseagreen;
-    /* margin-bottom: 10px; */
-    margin-top: 2%;
-}
-.container {
-    margin: 0 auto;
-    /* max-width: 1250px; */
-    max-width: 100%;
+*{
+	margin:0;
+	padding: 0;
+  box-sizing: border-box;
+  font-family: 'Shadows Into Light Two', cursive;
 }
 
+.flex-container{
+	display: flex;
+  justify-content:center;
+  align-items: flex-end;
+  height: 100%;
+}
 
-.back-image{
+.kitten{
+  padding-bottom: 4em;
+  max-width: 100%; 
+}
+.cover-mobile{
+  background-image: url("../assets/img/dawn.png");
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 45%;
+}
+.medium , .large{
+  display: none;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .cover-tablet{
+    background-image: url("../assets/img/night.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;    
-    /* background-position: center; */
-}
-.cat img {
-    display:block;
-    margin:auto;  
-    padding-top: 30%;
-    margin-top: 5%;
-
-}
-.tres, .dos, .uno{
+    height: 100vh;
+    background-position: 50% 45%;
+    max-width: 100vw;
+  }
+  .small , .large{
     display: none;
+  }
+  .medium{
+    display: block;
+  }
 }
 
-/* for smaller screen*/ 
-
-@media (max-width: 767px){
-    
-        .night{
-            background-image: url('../assets/img/night.jpg');
-            width: 100%;
-        }
-        .tres{
-            display: block;
-        }
-        .dos, .uno{
-            display: none;
-        }
-    }
-    
-    /* for medium screen*/ 
-    
-    @media (min-width: 768px) and (max-width: 991px) {
-        .dawn{
-            background-image: url('../assets/img/dawn.png');
-            width: 100%;
-        }
-        .dos{
-            display: block;
-        }
-        .uno, .tres{
-            display: none;
-        }
-    } 
-    
-    /* for larger screen*/ 
-    
-    @media (min-width: 992px) {
-        .day{
-            background-image:url('../assets/img/sunny-day.jpg');
-            width: 100%;
-        }
-        .uno{
-            display: block;
-        }   
-        .dos, .tres{
-            display: none;
-        }
-    }    
+/* Desktop Grid */
+@media (min-width: 992px) {
+  .cover-desktop{
+    background-image: url("../assets/img/sunny-day.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 45%;
+  }
+  .small , .medium{
+    display: none;
+  }
+  .large{
+    display: block;
+  }
+}  
